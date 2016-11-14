@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansObserver.Silo", "OrleansObserver.Silo\OrleansObserver.Silo.csproj", "{2BB1C8B4-188E-4B45-A8BD-808765220E16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansObserver.Interfaces", "OrleansObserver.Interfaces\OrleansObserver.Interfaces.csproj", "{B955C85D-9DE8-4318-8E79-87580489306B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansObserver.Grains", "OrleansObserver.Grains\OrleansObserver.Grains.csproj", "{AD058773-4ABE-4278-8023-885ACE39E076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrelansObservier.Client", "OrelansObservier.Client\OrelansObservier.Client.csproj", "{8E33BDAA-41D0-4F7C-9AB0-3BE295C5F22D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BB1C8B4-188E-4B45-A8BD-808765220E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB1C8B4-188E-4B45-A8BD-808765220E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB1C8B4-188E-4B45-A8BD-808765220E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB1C8B4-188E-4B45-A8BD-808765220E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B955C85D-9DE8-4318-8E79-87580489306B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B955C85D-9DE8-4318-8E79-87580489306B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B955C85D-9DE8-4318-8E79-87580489306B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B955C85D-9DE8-4318-8E79-87580489306B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD058773-4ABE-4278-8023-885ACE39E076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD058773-4ABE-4278-8023-885ACE39E076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD058773-4ABE-4278-8023-885ACE39E076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD058773-4ABE-4278-8023-885ACE39E076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E33BDAA-41D0-4F7C-9AB0-3BE295C5F22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E33BDAA-41D0-4F7C-9AB0-3BE295C5F22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E33BDAA-41D0-4F7C-9AB0-3BE295C5F22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E33BDAA-41D0-4F7C-9AB0-3BE295C5F22D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
