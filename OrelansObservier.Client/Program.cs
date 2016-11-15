@@ -58,12 +58,28 @@ namespace OrelansObservier.Client
 
         private static async Task DoClientWork()
         {
-            var ourGrain = GrainClient.GrainFactory.GetGrain<IGrain1>(0);
+            IObserverGrain observerGrain = GrainClient.GrainFactory.GetGrain<IObserverGrain>(0);
+            await observerGrain.Start();
 
-            await ourGrain.DoTask();
+            var theObserver = new TheObserver();
+            var obj = GrainClient.GrainFactory.CreateObjectReference<IObserve>(theObserver).Result; // factory from IObserve
+
+            ISourceGrain sourceGrain = GrainClient.GrainFactory.GetGrain<ISourceGrain>(0);
+            await sourceGrain.SubscribeForUpdates(obj);
+            //await sourceGrain.SubscribeForUpdates(observerGrain);
 
             Console.WriteLine("Client is running.\nPress Enter to terminate...");
             Console.ReadLine();
+        }
+
+        // class for handling updates from grain
+        private class TheObserver : IObserve
+        {
+            // Receive updates 
+            public void StuffUpdate(int data)
+            {
+                Console.WriteLine("New stuff from Class: {0}", data);
+            }
         }
     }
 }
